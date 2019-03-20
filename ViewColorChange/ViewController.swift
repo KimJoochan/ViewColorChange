@@ -17,27 +17,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor=UIColor.brown;
     }
+    var checked1=false;
+    var checked2=false;
+    var checked3=false;
+    
     @IBAction func changeRed(_ sender: UIButton) {
-        if(firstView.isHidden==false){
-            firstView.isHidden=true
-        }else if(firstView.isHidden==true){
-            firstView.isHidden=false
-        }
+        checked1 = !checked1;
+        firstView.isHidden=checked1;
     }
     @IBAction func changeColor(_ sender: UIButton) {
-        secondView.backgroundColor=UIColor.white;
-        if(secondView.isHidden==false){
-            secondView.isHidden=true
-        }else if(secondView.isHidden==true){
-            secondView.isHidden=false
-        }
+        checked2 = !checked2;
+        secondView.isHidden=checked2;
     }
     @IBAction func changeColor2(_ sender: UIButton) {
-        if(thirdView.isHidden==false){
-            thirdView.isHidden=true
-        }else if(thirdView.isHidden==true){
-            thirdView.isHidden=false
-        }
+        checked3 = !checked3;
+        thirdView.isHidden=checked3;
+        
     }
     
 
