@@ -28,11 +28,13 @@ class ViewController: UIViewController {
     }
     @IBAction func changeColor(_ sender: UIButton) {
         checked2 = !checked2;
-        secondView.isHidden=checked2;
+        secondView.alpha=0.5
+        //secondView.isHidden=checked2;
     }
     @IBAction func changeColor2(_ sender: UIButton) {
         checked3 = !checked3;
-        thirdView.isHidden=checked3;
+        thirdView.alpha=0.5
+        //thirdView.isHidden=checked3;
         
     }
     
