@@ -23,7 +23,8 @@ class ViewController: UIViewController {
     
     @IBAction func changeRed(_ sender: UIButton) {
         checked1 = !checked1;
-        firstView.isHidden=checked1;
+        firstView.alpha=0.5
+        //firstView.isHidden=checked1;
     }
     @IBAction func changeColor(_ sender: UIButton) {
         checked2 = !checked2;
